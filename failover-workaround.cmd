@@ -1,7 +1,8 @@
 @echo off
 setlocal
 
-REM converted from powershell --- if ((Get-ClusterNode -Name $Env:computername).Status -eq 'Joining') { Stop-Service ClusSvc; net start clussvc /forcequorum } ---
+REM version 1.0, converted from powershell 
+REM --- if ((Get-ClusterNode -Name $Env:computername).Status -eq 'Joining') { Stop-Service ClusSvc; net start clussvc /forcequorum } ---
 set ServiceName=ClusSvc
 
 REM --- Require admin: run this script elevated and C:\Temp\ is created ---
